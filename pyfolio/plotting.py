@@ -450,9 +450,9 @@ def plot_drawdown_periods(returns, top=10, ax=None, **kwargs):
         if not pd.isna(peak) and not pd.isna(recovery):
             if pd.isnull(recovery):
                 recovery = returns.index[-1]
-        ax.fill_between(
-            (peak, recovery), lim[0], lim[1], alpha=0.4, color=colors[i]
-        )
+            ax.fill_between(
+                (peak, recovery), lim[0], lim[1], alpha=0.4, color=colors[i]
+            )
     ax.set_ylim(lim)
     ax.set_title("Top %i drawdown periods" % top)
     ax.set_ylabel("Cumulative returns")
