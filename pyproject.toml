@@ -1,5 +1,6 @@
 [project]
 requires-python = '>=3.7'
+name = "pyfolio-reloaded"
 
 [build-system]
 requires = [
